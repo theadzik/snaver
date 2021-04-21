@@ -2,11 +2,17 @@
 
 ## Half snake, half saver, all money
 
-![Snaver](docs/images/logo.png)
+<img src="/docs/images/logo.png" alt="Snaver" width="468" height="375"/>
 
-## Local development environment setup
+## Setup local development environment
 
-1. Create a virtual environment and run `pip install -r requirements.txt`.
+1. Clone this repository
+2. Open cloned folder in PyCharm
+3. Click `Add configuration`
+   1. Set `Name` to whatever you want to name your configuration, 
+      for example: `snaver`
+   2. Set `Host` to `localhost`
+   3. Apply
 2. Create a local database if you plan to use postgres.
 3. In `/projects` folder create a `local_settings.py` file based on
    `local_settings.example.py`.
@@ -17,6 +23,10 @@
     
        get_random_secret_key()
        ```
+4. Create local superuser account to log in on `/admin` page:
+   ```bash
+   python manage.py createsuperuser
+   ```
 
 ### External Links
 
