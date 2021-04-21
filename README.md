@@ -23,7 +23,11 @@
     
        get_random_secret_key()
        ```
-4. Create local superuser account to log in on `/admin` page:
+4. Populate the database:
+   ```bash
+   python manage.py migrate
+   ```
+5.  Create local superuser account to log in on `/admin` page:
    ```bash
    python manage.py createsuperuser
    ```
